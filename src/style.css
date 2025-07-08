@@ -190,6 +190,7 @@ section{
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  padding: 2 rem 0;
 }
 
 .empresa{
