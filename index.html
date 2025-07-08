@@ -1,5 +1,3 @@
-<!-- Navega usando os menu pelo amor de deus -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,32 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/style.css">
-  <link rel="icon" href="./img/logoOrc.png" type="image/png">
-
   <title>Portfólio</title>
 </head>
 <body>
 
   <div id="container">
-    
     <div id="menu">
       <div id="logo">
-        <h1>Arthur.</h1>
+        <h1>Arthur</h1>
       </div>
-  
+      
+      <!-- Menu de navegação lateral -->
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
-  
+      
       <div class="social">
         <a target="_blank" href="https://www.linkedin.com/in/arthurmds/"><img src="./img/linkedin.png" alt="linkedin"></a>
         <a target="_blank" href="https://github.com/artmds"><img src="./img/github.png" alt="github"></a>
-        <a target="_blank" href="https://www.behance.net/4rth"><img src="./img/behance.png" alt="behance"></a>
+        <a target="_blank" href="https://www.behance.net/arthurbarney"><img src="./img/behance.png" alt="behance"></a>
       </div>
     </div>
     
@@ -45,12 +42,10 @@
 
       <img src="./img/eu.jpg" alt="profile-pic" class="eumesmo">
       <h1>Olá, eu sou o Arthur!</h1>
-      <h2>Estudante de Engenharia de Software pela Universidade de Brasília e atualmente sou Coordenador de Acompanhamento de Projetos na Empresa Junior <strong>Orc'estra Gamificação.</strong></h2>
+      <h2>Estudante de ADS pela <strong>Uninter</strong> e atualmente sou Estagiário de Desenvolvimento na <strong>Quality Digital.</strong></h2>
     </section>
 
-    <section id="about">
-      <!-- <h2 class="heading">SOBRE MIM</h2>      -->
-      
+    <section id="about">      
       <div class="row-1">
         <div class="image">
           <h2>SOBRE MIM</h2>
@@ -59,11 +54,11 @@
 
         <div class="content-about">
           <h3>Olá eu sou o Arthur, front-end developer.</h3>
-          <p>Estudante de Engenharia de Software e Coordenador de Acompanhamento de Projetos na Orc'estra Gamificação, gosto muito de front-end por já ter um passado em design mas estou buscando o desenvolvimento fullstack.</p>
+          <p>Estudante de Engenharia de Software e Estagiário de Desenvolvimento na Quality Digital, gosto muito de desenvolvimento fullstack e segurança da informação.</p>
 
           <div class="box-container">
             <div class="box">
-              <p><span>Idade: </span>21</p>
+              <p><span>Idade: </span>23</p>
               <p><span>Pronomes: </span>Ele/Dele</p>
               <p><span>País: </span>Brasil</p>
               <p><span>Idiomas: </span>PT-BR / Eng</p>
@@ -72,21 +67,27 @@
             <div class="box">
               <p><span>Email: </span>arthur.mdsousa@gmail.com</p>
               <p><span>Curso: </span>Engenharia de Software</p>
-              <!-- <p><span>Language: </span>eae</p>
-              <p><span>Language: </span>eae</p> -->
             </div>
             
             
+            <h3>Experiências</h3>
             <div class="experiencias">
-              <h3 id="tomarnocu">Experiências</h3>
               <div class="empresa">
                 <p>Orc'estra Gamificação</p>
                 <img src="./img/logoOrc.png" alt="logoOrc" srcset="" width="80px" height="80px">
-                <p>Assessor de Projetos</p>
-                <p>2022 - Agora</p>
+                <p>Coordenador de Projetos</p>
+                <p>Jun 2023 - Nov 2023</p>
+              </div>
+
+              <div class="empresa">
+                <p>Quality Digital</p>
+                <img src="./img/quality.jpg" alt="logoOrc" srcset="" width="80px" height="80px">
+                <p>Estagiário de Desenvolvimento</p>
+                <p>Dez 2024 - Atualmente</p>
               </div>
               
             </div>
+
           </div>
         </div>
   
@@ -161,39 +162,19 @@
         
     </section>
 
+    <section id="contato">
+      <div class="formulario">
+              <h3>Contato</h3>
+              <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+    </section>
+
     </div>
 
-
-
-
-  <!-- Script de Rolagem do Mouse -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-  // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 100, function(){
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-});
-</script>
 </body>
 </html>
